@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Todo list</h1>
+        <button class="log-out"><i class="fas fa-sign-out-alt"></i></button>
+        <!-- <h2 class="userName">Daler's to do</h2> -->
+        <div class="items">
+            <div class="input-box">
+                <div class="add">
+                    <input type="text" placeholder="Nimadur qo'shish">
+                    <button class="btn addNewTask"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="sort">
+                    <span class="selected">Barchasi</span>
+                    <div>
+                        <i class="fas fa-sort-amount-down btn"></i>
+                        <div class="select">
+                            <ul>
+                                <li class="item">Barchasi</li>
+                                <li class="item">Bajarilgan</li>
+                                <li class="item">Bajarmaganlar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="out">
+                <ul class="tanlash">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

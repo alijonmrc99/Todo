@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="form-cont">
+      <h1>Todo list</h1>
+      <div class="singUp">
+        <h2>Ro'yaxatdan o'tish</h2>
+        <div class="field-name">
+          <i class="fas fa-user"></i>
+          <input type="text" id="username" name="username" placeholder="Name" />
+          <i class="fas fa-arrow-down"></i>
+        </div>
+        <div class="field-email">
+          <i class="fas fa-envelope"></i>
+          <input type="text" id="email" name="email" placeholder="Email" />
+          <i class="fas fa-arrow-down"></i>
+        </div>
+        <div class="field-password">
+          <i class="fas fa-key"></i>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+          <i class="fas fa-arrow-down"></i>
+        </div>
+        <div class="field-submit">
+          <button class="btn" id="submit-btn">Yuborish</button>
+        </div>
+        <a href="./index.html">Siz allaqachon a'zomisiz?</a>
+      </div>
+      <div class="checkPpassword">
+        <h2 class="header2">
+          Sizning <span id="userEmail"></span> pochtangizga parol yuborildi
+        </h2>
+        <div class="field-name field-name2">
+          <input
+            type="text"
+            id="verificationField"
+            name="username123"
+            placeholder="Password"
+          />
+          <i class="fas fa-arrow-down"></i>
+        </div>
+        <div class="field-submit">
+          <button class="btn" id="checkPassword">Yuborish</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/signInSingUp.js"></script>
+    <script src="./js/SignUp.js"></script>
+  </body>
+</html>

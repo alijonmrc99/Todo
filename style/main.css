@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Poopins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #283d3b;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 18px 0 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 18px;
+  color: #ffffff;
+}
+
+.log-out {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  right: 50px;
+  top: 18px;
+  cursor: pointer;
+}
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    to left,
+    rgb(255, 181, 113),
+    #ffb96c,
+    #ffbe68,
+    #ffc263,
+    rgb(255, 199, 95)
+  );
+  transition: background-color 0.5s ease;
+  position: relative;
+  font-family: "Poopins" sans-serif;
+}
+
+.singUp {
+  transition: all 0.3s ease-out;
+}
+
+.checkPpassword {
+  pointer-events: none;
+  opacity: 0;
+  position: relative;
+  bottom: 200px;
+  bottom: 231px;
+  transform: translateY(-30px);
+  display: flex;
+  transition: all 0.3s ease-out;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header2 {
+  font-size: 18px;
+}
+.header2 span {
+  color: #3e16ce;
+}
+
+.field-name,
+.field-email,
+.field-password,
+.field-submit,
+.field-finish {
+  background-color: white;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.5s ease;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* verifikarsiya xato bo'lganda chiqadigan belgilarga stillar */
+
+.error_verify {
+  position: absolute;
+  top: -30px;
+  left: 10%;
+  background-color: #252422;
+  color: #fffcf2;
+  font-weight: 200;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 2px 5px;
+  line-height: 15px;
+}
+
+.error_verify::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #2c3e50;
+}
+
+/* verifikatsiya ko'dini kiritish uchun inputga */
+
+#verificationField {
+  padding: 0 20px;
+}
+
+/* hisob mavjud bo'lmagada chiqadigan matn */
+
+.error-signIn {
+  color: #f00;
+  line-height: 10px;
+  height: 20px;
+}
+
+.field-submit {
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+
+.field-submit .btn {
+  width: 200px;
+  height: 100%;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  background-color: #57cc99;
+  outline: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.123);
+  text-shadow: 0 5px 15px rgba(255, 30, 0, 0.123);
+  border: 0;
+  border-radius: 5px;
+}
+
+.field-name i,
+.field-email i,
+.field-password i,
+.field-finish i {
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.form-cont input {
+  background-color: transparent;
+  border: 0;
+  flex: 1;
+  height: 50px;
+  outline: none;
+  font-family: "Poppins";
+}
+
+.form-cont a {
+  display: block;
+  margin: 15px 0;
+  transition: all 0.3s ease;
+  color: #283d3b;
+  text-align: center;
+}
+.form-cont a:hover {
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d2691e;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a34c0f;
+}
+
+/* Main qismi uchun stillar */
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to left,
+    #ffb571,
+    #ffb96c,
+    #ffbe68,
+    #ffc263,
+    #ffc75f
+  );
+}
+
+/* barcha btnlar uchun stillar */
+.container .btn {
+  width: 50px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #f8773e;
+  color: #ffffff;
+}
+
+/* itemlar uchun stillar */
+
+.items {
+  max-width: 800px;
+  margin: auto;
+}
+
+.input-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.add {
+  background-color: white;
+  height: 60px;
+  padding: 9px 17px;
+  font-size: 0;
+}
+
+.add input {
+  width: 430px;
+  height: 100%;
+  font-family: inherit;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  /* width: 100%; */
+  padding-right: 10px;
+}
+
+.add button {
+  border-radius: 5px;
+}
+
+.add button:active {
+  background-color: #b45328;
+}
+
+/* sort bo'limi uchun stillar */
+
+.sort {
+  background-color: #ffffff;
+  display: flex;
+  position: relative;
+}
+
+.selected {
+  padding: 0 25px;
+  align-self: center;
+}
+
+.sort i {
+  display: block;
+  text-align: center;
+  line-height: 60px;
+}
+
+.select {
+  position: absolute;
+  left: 0;
+  z-index: 15;
+  background-color: #ffffff;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.select .item {
+  border-bottom: 1px solid #f3eeee;
+  margin-top: 5px;
+  padding: 5px 25px;
+  cursor: pointer;
+}
+
+/* Qoshilgan vazifalar uchun stillar*/
+/* ularning eng katta otasi uchun stillar*/
+.out {
+  padding: 80px 0 30px;
+}
+
+.out li {
+  transition: all 0.5s;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  padding: 18px;
+  line-height: 1.5;
+  padding-right: 115px;
+  margin-bottom: 20px;
+}
+
+.out button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.out button.status {
+  right: 50px;
+  background-color: #57cc99;
+}
+
+.disable button.status {
+  background-color: #80ed99;
+}
+
+.enable{
+  color: rgba(40, 61, 59, 0.6);
+  text-decoration: line-through;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(10deg);
+  opacity: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .items {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .add {
+    width: 100%;
+  }
+
+  .add input {
+    width: 85%;
+  }
+
+  .addNewTask {
+    height: 90% !important;
+
+    position: absolute;
+    right: 65px;
+    height: 50px;
+    top: 3px;
+  }
+
+  .sort {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    line-height: 2;
+  }
+
+  .select {
+    width: 150px;
+    right: 0;
+    left: inherit;
+  }
+
+  .select .item {
+    border-bottom: 1px solid #f3eeee;
+    margin-top: 5px;
+    padding: 0px 25px;
+    cursor: pointer;
+  }
+
+  .selected {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 430) {
+  .add input {
+    width: 73%;
+  }
+} */
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    padding: 16px;
+    font-size: 40px;
+  }
+
+.field-name,
+.field-email,
+.field-password,
+.field-submit,
+.field-finish {
+  width: 90%; 
+}
+
+  .btn {
+    width: 40px;
+    font-size: 16px;
+  }
+
+  .log-out {
+   font-size: 25px;
+    right: 20px;
+  }
+
+  .add,
+  .sort i {
+    min-height: 50px;
+    line-height: 50px;
+  }
+
+  .add input {
+    width: 100%;
+    padding-right: 80px;
+  }
+
+  .addNewTask {
+    right: 55px;
+    height: 80% !important;
+    top: 5px;
+  }
+
+  .out {
+    padding-top: 40px;
+  }
+
+  .out li {
+    transition: all 0.5s;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    padding: 15px;
+    padding-right: 95px;
+  }
+
+  button.status {
+    right: 40px;
+  }
+}
